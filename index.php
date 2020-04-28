@@ -14,7 +14,7 @@
     <p class="base-url">URL de base :<br>https://geo.api.gouv.fr/communes/?nom=VILLE</p>
 
     <form action="https://geo.api.gouv.fr/communes/" method="GET">
-        <input placeholder="Ville recherchée" type="text" name="nom" class="city-name">
+        <input placeholder="Ville recherchée" type="text" name="nom" class="form-city">
         <input type="submit">
     </form>
 

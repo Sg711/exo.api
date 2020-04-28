@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+#view{
+    min-height: 300px;
+    border: 2px solid black;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+}
+.base-url{
+    font-size: 2rem;
+}
+.red{
+    color: red;
+}

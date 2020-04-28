@@ -8,7 +8,7 @@ $('form').submit(function()){
         $('#view').html('<p class="red">Champ vide !</p>');
     } else {
 
-        let cityTable = $('<thead><tr><th>Nom</th><th>Code Postal</th><th>Nombre d\'habitants</th><th>Département</th></tr></thead>');
+        let cityTable = $('<thead><tr><th>Nom</th><th>Code Postal</th><th>Nombre d\'habitants</th><th>Département</th></tr></thead><tbody></body>');
 
         data.forEach(function(city){
 
@@ -18,13 +18,13 @@ $('form').submit(function()){
             cityName.text(city.nom);
 
             let cityZipCode = $('<td></td>');
-            cityZipCode.text(city.zipCode);
+            cityZipCode.text(city.codePostaux);
 
             let cityPeopleNumber = $('<td></td>');
-            cityPeopleNumber.text(city.peopleNumber);
+            cityPeopleNumber.text(city.population);
 
             let cityDepartment = $('<td></td>');
-            cityDepartment.text(city.department);
+            cityDepartment.text(city.codeDepartement);
 
             newCity.append(cityName);
             newCity.append(cityZipCode);
